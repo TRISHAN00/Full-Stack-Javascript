@@ -252,4 +252,18 @@ delete employersObj[idToBeUpdate];
 
 // get data
 const getData = "0b58237b-bafb-4530-a05e-765d54071707";
-console.log(employersObj[getData]);
+// console.log(employersObj[getData]);
+
+// how to get key of id
+for (let key in employersObj) {
+  // console.log(employersObj[key].name);
+}
+
+// trave
+Object.keys(employersObj).forEach((key) => {
+  const employ = employersObj[key];
+
+  console.log(
+    `The name of Employer is (${employ.name}) and his/her Email: ${employ.email}`
+  );
+});
