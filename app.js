@@ -248,4 +248,8 @@ employersObj[idToBeUpdate] = {
 
 // delete data
 delete employersObj[idToBeUpdate];
-console.log(employersObj);
+// console.log(employersObj);
+
+// get data
+const getData = "0b58237b-bafb-4530-a05e-765d54071707";
+console.log(employersObj[getData]);
