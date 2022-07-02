@@ -235,7 +235,7 @@ employersObj[newEmployedObj.id] = newEmployedObj;
 // console.log(employersObj);
 
 // update
-const idToBeUpdate = "5a1edc12-aed1-4238-a04e-e963a2f24496";
+const idToBeUpdate = "917b24c4-3196-4651-a25c-932209cfc9b3";
 const updatedData = {
   name: "Rishan Saha",
   email: "rishan.saha@quantanite.com",
@@ -245,4 +245,7 @@ employersObj[idToBeUpdate] = {
   ...updatedData,
 };
 // console.log(employersObj[idToBeUpdate]);
+
+// delete data
+delete employersObj[idToBeUpdate];
 console.log(employersObj);
