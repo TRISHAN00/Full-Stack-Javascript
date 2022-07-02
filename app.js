@@ -263,7 +263,12 @@ for (let key in employersObj) {
 Object.keys(employersObj).forEach((key) => {
   const employ = employersObj[key];
 
-  console.log(
-    `The name of Employer is (${employ.name}) and his/her Email: ${employ.email}`
-  );
+  // console.log(
+  //   `The name of Employer is (${employ.name}) and his/her Email: ${employ.email}`
+  // );
+});
+
+// find data using Object.value it works directly find the data from.
+Object.values(employersObj).forEach((item) => {
+  console.log(`Employ name ${item.name} and Email is ${item.email}`);
 });
