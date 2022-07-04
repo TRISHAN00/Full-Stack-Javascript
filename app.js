@@ -292,4 +292,15 @@ sortable.sort((a, b) => {
   return a[1] - b[1];
 });
 
-console.log(sortable);
+// console.log(sortable);
+
+const data = [1, 2, 3, false, null, "", 4, 5, 6];
+
+const result = data.reduce((acc, curr) => {
+  if (curr) {
+    acc.push(curr.toString());
+  }
+  return acc;
+}, []);
+
+console.log(result);
