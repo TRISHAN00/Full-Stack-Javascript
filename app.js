@@ -315,25 +315,25 @@
 // // console.log(result);
 // console.timeEnd("Not Optimized");
 
-// console.time("Optimized");
-// arr.reduce((acc, curr) => {
+// // console.time("Optimized");
+// // arr.reduce((acc, curr) => {
+// //   if (curr % 2 === 0) {
+// //     acc.push(curr * 2);
+// //   }
+// //   return acc;
+// // }, []);
+// // console.time("Optimized");
+
+// const multiplyData = [];
+// for (let i = 1; i <= 10; i++) {
+//   multiplyData.push(i);
+// }
+
+// const result = multiplyData.reduce((acc, curr) => {
 //   if (curr % 2 === 0) {
 //     acc.push(curr * 2);
 //   }
 //   return acc;
 // }, []);
-// console.time("Optimized");
 
-const multiplyData = [];
-for (let i = 1; i <= 10; i++) {
-  multiplyData.push(i);
-}
-
-const result = multiplyData.reduce((acc, curr) => {
-  if (curr % 2 === 0) {
-    acc.push(curr * 2);
-  }
-  return acc;
-}, []);
-
-console.log(result);
+// console.log(result);
