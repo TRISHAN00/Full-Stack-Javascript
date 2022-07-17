@@ -75,13 +75,13 @@
 
 // // // const arr = [1, 2, 3, null, false, 4, 5, "", "test", 6, 7];
 
-// // // // for (let i = 0; i < arr.length; i++) {
-// // // //   if (typeof arr[i] !== "number") {
-// // // //     for (let j = i; j < arr.length - 1; j++) {
-// // // //       arr[j] = arr[j + 1];
-// // // //     }
-// // // //   }
-// // // // }
+// for (let i = 0; i < arr.length; i++) {
+//   if (typeof arr[i] !== "number") {
+//     for (let j = i; j < arr.length - 1; j++) {
+//       arr[j] = arr[j + 1];
+//     }
+//   }
+// }
 
 // // // const newArr = [];
 
