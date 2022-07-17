@@ -4,7 +4,7 @@
 
 // function composition
 function addition(num) {
-  return num === num ? -num++ : num;
+  return Math.abs(num + 1);
 }
 
 const sum = (a, b) => a + b;
@@ -16,4 +16,10 @@ const b = 20;
 
 const r3 = Math.abs(time(sum(a, b), sub(a, b)));
 
-console.log(r3);
+// Create a function that takes the age in years and returns the age in days.
+
+function calcAge(age) {
+  return age * 365;
+}
+
+console.log(calcAge(65));
