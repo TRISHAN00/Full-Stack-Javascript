@@ -55,4 +55,9 @@ function calculator(str) {
   return eval(str);
 }
 
-console.log(calculator("45-15"));
+// Create a function that takes an integer and returns true if it's divisible by 100, otherwise return false.
+
+function divisible(num) {
+  return num % 100 ? false : true;
+}
+console.log(divisible(1));
