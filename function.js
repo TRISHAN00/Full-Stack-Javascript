@@ -60,4 +60,11 @@ function calculator(str) {
 function divisible(num) {
   return num % 100 ? false : true;
 }
-console.log(divisible(1));
+
+// Create a function that calculates the area of a rectangle. If the arguments are invalid, your function must return -1.
+
+function area(h, w) {
+  return h, w === true ? h * w : -1;
+}
+
+console.log(area(-1, 5));
