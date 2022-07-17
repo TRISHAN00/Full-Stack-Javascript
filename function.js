@@ -23,8 +23,22 @@ function calcAge(age) {
 }
 
 // Find Out the mistake
+// function squaed(b) {
+//     return a * a;
+//   }
+
 function squaed(b) {
   return b * b;
 }
 
-console.log(squaed(9));
+// Create a function that takes the number of wins, draws and losses and calculates the number of points a football team has obtained so far.
+
+// wins get 3 points
+// draws get 1 point
+// losses get 0 points
+
+function footballPoints(wins, draws, losses) {
+  return wins * 3 + draws * 1 + losses * 0;
+}
+
+console.log(footballPoints(0, 0, 1));
