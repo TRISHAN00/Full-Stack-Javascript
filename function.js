@@ -22,4 +22,9 @@ function calcAge(age) {
   return age * 365;
 }
 
-console.log(calcAge(65));
+// Find Out the mistake
+function squaed(b) {
+  return b * b;
+}
+
+console.log(squaed(9));
