@@ -67,4 +67,7 @@ function area(h, w) {
   return h, w === true ? h * w : -1;
 }
 
-console.log(area(-1, 5));
+// On/Off Switches
+function posCom(num) {
+  return Math.pow(num);
+}
