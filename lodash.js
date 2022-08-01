@@ -14,3 +14,12 @@ const compact = (arr) => {
   }, []);
   return result;
 };
+
+// return contact array
+const array = [1];
+const concat = (value) => {
+  const arr = [];
+  if (value) {
+    arr.push(value);
+  }
+};
