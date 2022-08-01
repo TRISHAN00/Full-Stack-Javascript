@@ -26,3 +26,9 @@ get(`/users?username=Trishan`)
   .catch(() => {
     console.log("Error");
   });
+
+//   Async await
+
+async function getUserName(username) {
+  await get(`/users?username=${username}`);
+}
