@@ -30,5 +30,13 @@ get(`/users?username=Trishan`)
 //   Async await
 
 async function getUserName(username) {
-  await get(`/users?username=${username}`);
+  try {
+    const mainUser = await get(`/users?username=${username}`);
+    const posts = await get(`/comments?post_id=${mainUser.id}`);
+    const comments = await get(`/comments?post_id=${posts[0].id}`);
+    const user = await get(`/users?username=${comments[0].username}`);
+    console.log(user);
+  } catch (e) {
+    console.log(e);
+  }
 }
