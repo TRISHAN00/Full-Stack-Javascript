@@ -23,3 +23,20 @@ const concat = (value) => {
     arr.push(value);
   }
 };
+
+// difference
+const difference = (arr1, arr2) => {
+  const match = [];
+
+  for (let i = 0; i < arr1.length; i++) {
+    for (let e = 0; e < arr2.length; e++) {
+      if (arr1[i] === arr2[e]) {
+        match.push(arr2[i]);
+      }
+    }
+  }
+
+  return match.length;
+};
+
+console.log(difference([2, 1, 4], [2, 3, 1, 4]));
