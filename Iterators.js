@@ -4,4 +4,6 @@ function next(arr) {
   return arr[index++];
 }
 
-console.log(next(arr));
+// Second example of iterator [Symbol]
+const change = "Love Bird";
+console.log(change[Symbol.iterator]);
