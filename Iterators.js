@@ -9,10 +9,8 @@ const channel = "Love";
 const channelIterator = channel[Symbol.iterator]();
 console.log(channelIterator.next());
 console.log(channelIterator.next());
-console.log(channelIterator.next());
-console.log(channelIterator.next());
-console.log(channelIterator.next());
-console.log(channelIterator.next());
-console.log(channelIterator.next());
-console.log(channelIterator.next());
-console.log(channelIterator.next());
+
+// Iterate a string using for of loop
+for (const value of channel) {
+  console.log(value);
+}
