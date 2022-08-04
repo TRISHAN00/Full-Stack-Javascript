@@ -21,3 +21,26 @@ while (true) {
   }
   //   console.log(data.value);
 }
+
+// Iterator object example of
+
+const range = {
+  start: 0,
+  stop: 100,
+  step: 5,
+};
+
+range[Symbol.iterator] = function () {
+  return {
+    next() {
+      return {
+        value: 0,
+        done: false,
+      };
+    },
+  };
+};
+
+for (let v of range) {
+  console.log(v);
+}
