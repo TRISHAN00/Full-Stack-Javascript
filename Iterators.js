@@ -1,11 +1,11 @@
 const arr = [1, 2, 3, 4, 5];
-
+let index = 0;
 function next(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    const element = arr[i];
-    console.log(element);
-  }
-  return arr;
+  return arr[index++];
 }
 
-next(arr);
+console.log(next(arr));
+console.log(next(arr));
+console.log(next(arr));
+console.log(next(arr));
+console.log(next(arr));
