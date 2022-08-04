@@ -5,7 +5,3 @@ function next(arr) {
 }
 
 console.log(next(arr));
-console.log(next(arr));
-console.log(next(arr));
-console.log(next(arr));
-console.log(next(arr));
