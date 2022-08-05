@@ -46,6 +46,25 @@ range[Symbol.iterator] = function () {
   };
 };
 
-for (let v of range) {
-  console.log(v);
+const array = ["Trishan Saha", "Rishan Saha"];
+
+const r = array[Symbol.iterator]();
+console.log(r.next());
+console.log(r.next());
+console.log(r.next());
+
+for (let i = 0; i < array.length; i++) {
+  const element = array[i];
+  // console.log(element);
+}
+
+const obj = {
+  studentOne: "Trishan Saha",
+  studentTwo: "Rishan Saha",
+};
+
+let entries = Object.entries(obj);
+for (let i = 0; i < entries.length; i++) {
+  const element = entries[i][1];
+  console.log(element);
 }
