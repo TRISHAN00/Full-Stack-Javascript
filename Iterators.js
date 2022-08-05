@@ -25,18 +25,23 @@ while (true) {
 // Iterator object example of
 
 const range = {
-  start: 0,
+  start: 10,
   stop: 100,
-  step: 5,
+  step: 10,
 };
 
 range[Symbol.iterator] = function () {
+  let current = this.start;
+  const stop = this.stop;
+  const step = this.step;
   return {
     next() {
-      return {
-        value: 0,
-        done: false,
+      const obj = {
+        value: current,
+        done: current > stop,
       };
+      current += step;
+      return obj;
     },
   };
 };
