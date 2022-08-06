@@ -4,7 +4,8 @@ const chunk = (arr, size) => {
   return result;
 };
 
-console.log(chunk([1, 2, 3, 4], 2));
+// console.log(chunk([1, 2, 3, 4], 2));
+
 // compact
 const compact = (arr) => {
   const result = arr.reduce((acc, curr) => {
