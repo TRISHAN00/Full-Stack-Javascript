@@ -6,9 +6,23 @@ async function getUsers() {
   return users;
 }
 
+async function* getPostByUsers(users) {
+  const url = `https://jsonplaceholder.typicode.com/posts`;
+  for (let i = 0; i < users.length; i++) {
+    const { data: posts } = await axios.get(`${url}?userId=${users[i].id}`);
+    yield posts;
+  }
+}
+
 getUsers()
-  .then((user) => {
-    console.log(user);
+  .then(async (users) => {
+    const userIterator = await getPostByUsers(users);
+
+    await userIterator.next();
+    await userIterator.next();
+    await userIterator.next();
+
+    console.log((await userIterator.next()).value);
   })
   .catch((err) => {
     console.log(err);
@@ -23,15 +37,3 @@ function* generatorId() {
 
 const generateUserId = generatorId();
 const generateProfileId = generatorId();
-
-// console.log("User", generateUserId.next().value);
-// console.log("User", generateUserId.next().value);
-// console.log("User", generateUserId.next().value);
-// console.log("User", generateUserId.next().value);
-
-// console.log("Product Id", generateProfileId.next().value);
-// console.log("Product Id", generateProfileId.next().value);
-// console.log("Product Id", generateProfileId.next().value);
-// console.log("Product Id", generateProfileId.next().value);
-
-// Difference between Async Iterator and async generator
