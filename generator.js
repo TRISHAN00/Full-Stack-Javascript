@@ -21,13 +21,12 @@ getUsers()
     await userIterator.next();
     await userIterator.next();
     await userIterator.next();
-
-    console.log((await userIterator.next()).value);
   })
   .catch((err) => {
     console.log(err);
   });
 
+// Example - 1
 function* generatorId() {
   let index = 1;
   while (true) {
